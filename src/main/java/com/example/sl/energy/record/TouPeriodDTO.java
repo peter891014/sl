@@ -1,6 +1,6 @@
-package com.example.sl.record;
+package com.example.sl.energy.record;
 
-import com.example.sl.enums.TouState;
+import com.example.sl.energy.enums.TouState;
 
 import java.time.LocalTime;
 /**
@@ -14,6 +14,5 @@ public record TouPeriodDTO(TouState state, LocalTime startTime, LocalTime
     public int compareTo(TouPeriodDTO other) {
         return this.startTime.compareTo(other.startTime);
     }
-
 
 }
